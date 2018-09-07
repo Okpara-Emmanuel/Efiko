@@ -48,13 +48,14 @@ ul {margin:0;
   transition-duration: 0.7s;
 }
 
-.dark{
+.dark {
   padding:15px;
   background: rgba(177, 197, 238, 0.3);
   color:#000000;
   margin-top:80px;
   margin-bottom:10px;
 }
+.case {background: rgba(2, 16, 43, 0.3);}
 
 /*Header*/
 header #branding {
@@ -109,12 +110,13 @@ header #current .button_1{
   font-size: 50px;
   }
 
-#showcase{
-  min-height:400px;
-  background:url('/img/showcase.jpg') no-repeat 0 -400px;
-  text-align:center;
-  color:#ffffff;}
-
+  #showcase{
+    min-height:400px;
+    background:url('../img/case7.jpg') no-repeat 0 -400px;
+    text-align:center;
+    color:#ffffff;
+  }
+  
   /* Main-col */
   article#main-col{
   float: left;
@@ -244,7 +246,13 @@ footer a{
     margin-bottom:5px;
   }
 
-  .button_1, header nav li, .button_2{
+  .button_1, header nav li{
+    padding: 0px 3px 0px 3px;
+    font-size: 12px;
+    margin-left:0px;
+   }
+
+   .button_1{
     padding: 0px 3px 0px 3px;
     font-size: 12px;
     margin-left:0px;
