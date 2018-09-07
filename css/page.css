@@ -24,22 +24,33 @@ ul {margin:0;
   color:#ffffff;
   border-radius:7px;
   cursor:pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+  -webkit-transition-duration: 0.7s; /* Safari */
+  transition-duration: 0.7s;
 }
+
+.button_1:hover, .button_2:hover { background-color: #000000;
+  color: #ffffff;
+
+  }
 
 .button_2{
   height:38px;
   background:#4457ac;
   border:0;
-  padding-left: 20px;
-  padding-right:20px;
+  padding-left: 10px;
+  padding-right:10px;
   color:#ffffff;
   border-radius:7px;
   cursor:pointer;
+  -webkit-transition-duration: 0.7s; /* Safari */
+  transition-duration: 0.7s;
 }
 
 .dark{
   padding:15px;
-  background:#d4cdd1;
+  background: rgba(177, 197, 238, 0.3);
   color:#000000;
   margin-top:80px;
   margin-bottom:10px;
@@ -85,9 +96,11 @@ header .highlight{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-header .current a{
-  color:#4457ac;
-  font-weight:bold;}
+header #current .button_1{
+  color:#fcfcfd;
+  font-weight:bold;
+  background-color: #000000;
+  }
 
 .welcome {
   text-align:center;
@@ -116,7 +129,7 @@ ul#services li{
   background:#4457ac;
   color: #ffffff;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.8);
-  border-radius: 1rem
+  border-radius: 1rem;
 }
    /*Side bar*/
     aside#sidebar{
@@ -126,8 +139,7 @@ ul#services li{
 
     /*SIGN IN*/
 section#signin{
-  width:30%;
-  margin-top:10px;
+  width:40%;
 }
 
 section#signin .quote input, aside#sidebar .quote textarea{
@@ -169,19 +181,19 @@ footer a{
 }
 
 .fa-facebook{
-      background:#38393b;
+      background:#000000;
       color: white;
     }
 
 .fa-instagram {
-  background:#38393b;
+  background:#000000;
   color: #ffffff;
 }
 
-.fa-twitter { background:#38393b;
+.fa-twitter { background:#000000;
       color: white;}
 
-.fa-github {background: #38393b;
+.fa-github {background: #000000;
     color: white;}
 
 .fa{-webkit-transition-duration:
@@ -194,7 +206,10 @@ footer a{
   margin: 3px 1px;
   border-radius: 50%;} 
 
-.fa:hover{background: rgba(204, 204, 231, 0.5)}
+.fa:hover{
+  color:#ffffff;
+  background: #3c4880
+}
 
 /* Media Queries */
 @media(max-width: 768px){
@@ -229,9 +244,21 @@ footer a{
     margin-bottom:5px;
   }
 
+  .button_1, header nav li, .button_2{
+    padding: 0px 3px 0px 3px;
+    font-size: 12px;
+    margin-left:0px;
+   }
+
   section#sidebar{
     text-align: center;
     width:100%;
     margin-top:10px;
   }
+
+  /*sign in*/
+  section#signin{ 
+  width:100%;
+  }
+  
 }
